@@ -1,0 +1,8 @@
+.vscode/
+*.log
+*.tmp
+Thumbs.db
+.DS_Store
+/Rename Manager/.modcache/
+/personal/
+*.zip

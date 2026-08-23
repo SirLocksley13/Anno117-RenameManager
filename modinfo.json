@@ -1,0 +1,32 @@
+{
+  "ModID": "rename-manager-sirlocksley",
+  "Version": "1.0.0",
+  "Anno": 8,
+  "Difficulty": "cheat",
+  "RequiresNewGame": false,
+  "SafeToRemove": true,
+  "ModName": {
+    "English": "Rename Manager",
+    "German": "Rename Manager",
+    "French": "Rename Manager"
+  },
+  "Category": {
+    "English": "Mod",
+    "German": "Mod"
+  },
+  "Description": {
+    "English": "Find and rename ships and trade routes directly in Anno 117. Rename Manager provides native in-game menus for All Ships, Ships by Trade Route, Independent Ships, Warships, All Trade Routes, routes by Group / Region, By Islands and By Goods. Island and goods views use cached scans with a combined manual rescan. Ctrl+Alt+R opens Rename Manager; Ctrl+Alt+1-9 selects numbered entries and Ctrl+Alt+0 goes back. English and German. No new game required.",
+    "German": "Finde und benenne Schiffe und Handelsrouten direkt in Anno 117 um. Rename Manager bietet native In-Game-Menues fuer Alle Schiffe, Schiffe nach Handelsroute, Unabhaengige Schiffe, Kriegsschiffe, Alle Handelsrouten, Routen nach Gruppe / Region, Nach Inseln und Nach Waren. Insel- und Warenansichten nutzen Caches mit einem kombinierten manuellen Rescan. Ctrl+Alt+R oeffnet Rename Manager; Ctrl+Alt+1-9 waehlt nummerierte Eintraege und Ctrl+Alt+0 geht zurueck. Englisch und Deutsch. Kein neues Spiel erforderlich.",
+    "French": "Trouvez et renommez rapidement les navires et les routes commerciales directement dans Anno 117. Rename Manager propose des menus intégrés pour Tous les navires, Navires par route commerciale, Navires indépendants, Navires de guerre, Toutes les routes commerciales, Par groupe / région, Par îles et Par marchandises. Les vues Îles et Marchandises utilisent des caches avec un rescan manuel combiné. Ctrl+Alt+R ouvre Rename Manager ; Ctrl+Alt+1-9 sélectionne les entrées numérotées et Ctrl+Alt+0 permet de revenir en arrière. Anglais, allemand et français. Aucune nouvelle partie n'est nécessaire."
+  },
+  "CreatorName": "Dr. Enrico Handrick",
+  "Scripts": {
+    "Modules": [
+      "renamemanager/rename-manager.lua"
+    ],
+    "Init": "RenameManager = require(\"rename-manager\")",
+    "Load": "RenameManager:Load()",
+    "Tick": "RenameManager:Tick()"
+  },
+  "CreatorContact": "https://github.com/SirLocksley13/Anno117-RenameManager"
+}

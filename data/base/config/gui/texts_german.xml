@@ -1,0 +1,134 @@
+<?xml version='1.0' encoding='utf-8'?>
+<ModOps>
+  <ModOp Add="/TextExport/Texts[1]">
+    <Text>
+      <Text>RENAME MANAGER</Text>
+      <LineId>2019720000</LineId>
+    </Text>
+    <Text>
+      <Text>Welche Schiffe moechtest du umbenennen?</Text>
+      <LineId>2019720001</LineId>
+    </Text>
+    <Text>
+      <Text>Alle Schiffe</Text>
+      <LineId>2019720002</LineId>
+    </Text>
+    <Text>
+      <Text>Schiffe nach Handelsroute</Text>
+      <LineId>2019720003</LineId>
+    </Text>
+    <Text>
+      <Text>Unabhaengige Schiffe</Text>
+      <LineId>2019720004</LineId>
+    </Text>
+    <Text>
+      <Text>Kriegsschiffe</Text>
+      <LineId>2019720005</LineId>
+    </Text>
+    <Text>
+      <Text> 
+&lt;&lt;&lt; SCHLIESSEN &gt;&gt;&gt;</Text>
+      <LineId>2019720006</LineId>
+    </Text>
+    <Text>
+      <Text>Rename Manager</Text>
+      <LineId>2019720007</LineId>
+    </Text>
+    <Text>
+      <Text>RM_CLOSE_DE</Text>
+      <LineId>2019720090</LineId>
+    </Text>
+    <Text>
+      <Text>RM_SHIP_REPORT_P1_DE</Text>
+      <LineId>2019720101</LineId>
+    </Text>
+    <Text>
+      <Text>RM_SHIP_REPORT_P2_DE</Text>
+      <LineId>2019720102</LineId>
+    </Text>
+    <Text>
+      <Text>RM_SHIP_REPORT_P3_DE</Text>
+      <LineId>2019720103</LineId>
+    </Text>
+    <Text>
+      <Text>RM_SHIP_REPORT_P4_DE</Text>
+      <LineId>2019720104</LineId>
+    </Text>
+    <Text>
+      <Text>RM_SHIP_REPORT_P5_DE</Text>
+      <LineId>2019720105</LineId>
+    </Text>
+    <Text>
+      <Text>RM_SHIP_REPORT_P6_DE</Text>
+      <LineId>2019720106</LineId>
+    </Text>
+    <Text>
+      <Text>RM_SHIP_REPORT_P7_DE</Text>
+      <LineId>2019720107</LineId>
+    </Text>
+    <Text>
+      <Text>RM_SHIP_REPORT_P8_DE</Text>
+      <LineId>2019720108</LineId>
+    </Text>
+    <Text>
+      <Text>RM_SHIP_REPORT_P9_DE</Text>
+      <LineId>2019720109</LineId>
+    </Text>
+    <Text>
+      <Text>RM_SHIP_REPORT_P10_DE</Text>
+      <LineId>2019720110</LineId>
+    </Text>
+    <Text>
+      <Text>RM_SHIP_REPORT_P11_DE</Text>
+      <LineId>2019720111</LineId>
+    </Text>
+    <Text>
+      <Text>RM_SHIP_REPORT_P12_DE</Text>
+      <LineId>2019720112</LineId>
+    </Text>
+    <Text>
+      <Text>Handelsrouten</Text>
+      <LineId>2019720008</LineId>
+    </Text>
+    <Text>
+      <Text>Schiffe</Text>
+      <LineId>2019720011</LineId>
+    </Text>
+    <Text>
+      <Text>&lt;&lt;&lt; ZURUECK &gt;&gt;&gt;</Text>
+      <LineId>2019720012</LineId>
+    </Text>
+    <Text>
+      <Text>Welche Schiffe moechtest du anzeigen oder umbenennen?</Text>
+      <LineId>2019720013</LineId>
+    </Text>
+    <Text>
+      <Text>Was moechtest du mit Handelsrouten machen?</Text>
+      <LineId>2019720014</LineId>
+    </Text>
+    <Text>
+      <Text>Alle Handelsrouten</Text>
+      <LineId>2019720015</LineId>
+    </Text>
+    <Text>
+      <Text>Nach Gruppe / Region</Text>
+      <LineId>2019720016</LineId>
+    </Text>
+    <Text>
+      <Text>Nach Inseln</Text>
+      <LineId>2019720017</LineId>
+    </Text>
+    <Text>
+      <Text>Inseln + Waren neu scannen</Text>
+      <LineId>2019720018</LineId>
+    </Text>
+    <Text>
+      <Text>Nach Waren</Text>
+      <LineId>2019720019</LineId>
+    </Text>
+    <Text>
+      <Text>Waren neu scannen</Text>
+      <LineId>2019720020</LineId>
+    </Text>
+  </ModOp>
+</ModOps>
