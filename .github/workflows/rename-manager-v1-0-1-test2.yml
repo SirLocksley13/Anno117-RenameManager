@@ -12,7 +12,7 @@ permissions:
   contents: read
 
 jobs:
-  red-contract:
+  build-and-verify:
     runs-on: ubuntu-latest
     steps:
       - name: Check out test2 branch
@@ -32,3 +32,94 @@ jobs:
             exit 1
           fi
           echo 'RED confirmed: test1 lacks the shared parchment migration as expected.'
+
+      - name: Record protected Rename Manager Lua hash
+        shell: bash
+        run: sha256sum renamemanager/rename-manager.lua | tee /tmp/rename-manager-source.sha256
+
+      - name: Build bounded v1.0.1-test2 candidate
+        run: python tools/build_v1_0_1_test2.py
+
+      - name: GREEN - validate shared configurable controls candidate
+        run: python tools/validate_v1_0_1_test2.py --root 'build-test2/Rename Manager'
+
+      - name: Verify protected runtime is byte-identical
+        shell: bash
+        run: |
+          set -euo pipefail
+          cmp renamemanager/rename-manager.lua 'build-test2/Rename Manager/renamemanager/rename-manager.lua'
+          echo 'Protected rename-manager.lua is byte-identical.'
+
+      - name: Verify thin consumer exact content
+        shell: bash
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          expected = (
+              "local Consumer = {}\n\n"
+              "function Consumer:Handle(slot)\n"
+              "    slot = tonumber(slot)\n"
+              "    if slot == 0 then\n"
+              "        return RenameManager:BackToMenu()\n"
+              "    end\n"
+              "    if slot == nil or slot < 1 or slot > 9 then\n"
+              "        return false\n"
+              "    end\n"
+              "    return RenameManager:ParchmentShortcut(slot)\n"
+              "end\n\n"
+              "return Consumer\n"
+          )
+          actual = Path('build-test2/Rename Manager/renamemanager/parchment-consumer.lua').read_text(encoding='utf-8')
+          assert actual == expected, actual
+          print('Thin PC02 consumer content PASS.')
+          PY
+
+      - name: Parse every XML and modinfo recursively
+        shell: bash
+        run: |
+          python - <<'PY'
+          import json
+          import xml.etree.ElementTree as ET
+          from pathlib import Path
+          root = Path('build-test2/Rename Manager')
+          xml_files = sorted(root.rglob('*.xml'))
+          modinfos = sorted(root.rglob('modinfo.json'))
+          for path in xml_files:
+              ET.parse(path)
+          for path in modinfos:
+              json.loads(path.read_text(encoding='utf-8'))
+          assert len(modinfos) == 2, [str(p) for p in modinfos]
+          print(f'Parsed {len(xml_files)} XML files and {len(modinfos)} modinfo.json files successfully.')
+          PY
+
+      - name: Verify package structure and ZIP integrity
+        shell: bash
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import zipfile
+          zpath = Path('build-test2/Rename_Manager_v1.0.1-test2_Shared_Configurable_Controls.zip')
+          with zipfile.ZipFile(zpath) as z:
+              bad = z.testzip()
+              assert bad is None, f'ZIP CRC failure: {bad}'
+              names = z.namelist()
+              assert all(n.startswith('Rename Manager/') for n in names), 'Unexpected top-level path'
+              modinfos = sorted(n for n in names if n.endswith('modinfo.json'))
+              expected = [
+                  'Rename Manager/SirLocksley Parchment Controls Core [SubMod]/modinfo.json',
+                  'Rename Manager/modinfo.json',
+              ]
+              assert modinfos == expected, modinfos
+              assert 'Rename Manager/renamemanager/rename-manager.lua' in names
+              assert 'Rename Manager/renamemanager/parchment-consumer.lua' in names
+              print(f'ZIP integrity PASS; {len(names)} files; parent + one nested shared core.')
+          PY
+          sha256sum build-test2/Rename_Manager_v1.0.1-test2_Shared_Configurable_Controls.zip
+
+      - name: Upload test2 candidate
+        uses: actions/upload-artifact@v4
+        with:
+          name: Rename_Manager_v1.0.1-test2_Shared_Configurable_Controls
+          path: build-test2/Rename_Manager_v1.0.1-test2_Shared_Configurable_Controls.zip
+          if-no-files-found: error
+          retention-days: 14
