@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Build Rename Manager v1.0.1-test2 from the verified test1 source tree.
 
-The protected rename/search/navigation Lua file is copied byte-for-byte.  This
+The protected rename/search/navigation Lua file is copied byte-for-byte. This
 builder changes only shortcut registration, adds the thin shared consumer, and
 bundles the already-proven XML-only shared parchment controls contract.
 """
@@ -68,8 +68,8 @@ def remove_local_parchment_rows() -> None:
 
 def add_consumer() -> None:
     path = STAGE / "renamemanager/parchment-consumer.lua"
-    path.write_text(
-        """local Consumer = {}\n\n"
+    consumer = (
+        "local Consumer = {}\n\n"
         "function Consumer:Handle(slot)\n"
         "    slot = tonumber(slot)\n"
         "    if slot == 0 then\n"
@@ -80,9 +80,9 @@ def add_consumer() -> None:
         "    end\n"
         "    return RenameManager:ParchmentShortcut(slot)\n"
         "end\n\n"
-        "return Consumer\n""",
-        encoding="utf-8",
+        "return Consumer\n"
     )
+    path.write_text(consumer, encoding="utf-8")
 
 
 def update_parent_modinfo() -> None:
@@ -146,8 +146,11 @@ def write_core_assets(core: Path) -> None:
     export = core / "data/base/config/export"
     export.mkdir(parents=True, exist_ok=True)
 
-    lines = ["<?xml version='1.0' encoding='utf-8'?>", "<ModOps>",
-             '  <ModOp Type="add" GUID="2001271" Path="/Values/ShortcutConfig/InputBindings">']
+    lines = [
+        "<?xml version='1.0' encoding='utf-8'?>",
+        "<ModOps>",
+        '  <ModOp Type="add" GUID="2001271" Path="/Values/ShortcutConfig/InputBindings">',
+    ]
 
     for slot in range(1, 10):
         line_id = TEXT_BASE + slot
@@ -197,8 +200,11 @@ def write_core_texts(core: Path) -> None:
     labels.append((TEXT_BASE + 10, "Parchment Controls - Back"))
 
     for language in ("english", "german", "french"):
-        lines = ["<?xml version='1.0' encoding='utf-8'?>", "<ModOps>",
-                 '  <ModOp Add="/TextExport/Texts[1]">']
+        lines = [
+            "<?xml version='1.0' encoding='utf-8'?>",
+            "<ModOps>",
+            '  <ModOp Add="/TextExport/Texts[1]">',
+        ]
         for line_id, label in labels:
             lines.extend([
                 "    <Text>",
