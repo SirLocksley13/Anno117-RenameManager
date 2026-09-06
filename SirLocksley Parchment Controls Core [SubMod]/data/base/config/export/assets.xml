@@ -1,0 +1,145 @@
+<?xml version='1.0' encoding='utf-8'?>
+<ModOps>
+  <ModOp Type="add" GUID="2001271" Path="/Values/ShortcutConfig/InputBindings">
+    <Item>
+      <Command>if SirLocksleyPC01 ~= nil and SirLocksleyPC01.Handle ~= nil then SirLocksleyPC01.Handle(SirLocksleyPC01,1) end; if SirLocksleyPC02 ~= nil and SirLocksleyPC02.Handle ~= nil then SirLocksleyPC02.Handle(SirLocksleyPC02,1) end; if SirLocksleyPC03 ~= nil and SirLocksleyPC03.Handle ~= nil then SirLocksleyPC03.Handle(SirLocksleyPC03,1) end; if SirLocksleyPC04 ~= nil and SirLocksleyPC04.Handle ~= nil then SirLocksleyPC04.Handle(SirLocksleyPC04,1) end; if SirLocksleyPC05 ~= nil and SirLocksleyPC05.Handle ~= nil then SirLocksleyPC05.Handle(SirLocksleyPC05,1) end; if SirLocksleyPC06 ~= nil and SirLocksleyPC06.Handle ~= nil then SirLocksleyPC06.Handle(SirLocksleyPC06,1) end; if SirLocksleyPC07 ~= nil and SirLocksleyPC07.Handle ~= nil then SirLocksleyPC07.Handle(SirLocksleyPC07,1) end; if SirLocksleyPC08 ~= nil and SirLocksleyPC08.Handle ~= nil then SirLocksleyPC08.Handle(SirLocksleyPC08,1) end; if SirLocksleyPC09 ~= nil and SirLocksleyPC09.Handle ~= nil then SirLocksleyPC09.Handle(SirLocksleyPC09,1) end; if SirLocksleyPC10 ~= nil and SirLocksleyPC10.Handle ~= nil then SirLocksleyPC10.Handle(SirLocksleyPC10,1) end; if SirLocksleyPC11 ~= nil and SirLocksleyPC11.Handle ~= nil then SirLocksleyPC11.Handle(SirLocksleyPC11,1) end; if SirLocksleyPC12 ~= nil and SirLocksleyPC12.Handle ~= nil then SirLocksleyPC12.Handle(SirLocksleyPC12,1) end</Command>
+      <Text>2088800001</Text>
+      <Active>Session</Active>
+      <Configurable>1</Configurable>
+      <Identifier>SirLocksleyParchmentSelect1</Identifier>
+      <AvailableOnPlatforms>PC</AvailableOnPlatforms>
+      <HideInOptionMenu>0</HideInOptionMenu>
+      <AllowMultipleShortcuts>1</AllowMultipleShortcuts>
+      <InputTypes>
+        <Modern><KeyType>Control;Alt;Digit1</KeyType></Modern>
+        <Legacy><KeyType>Control;Alt;Digit1</KeyType></Legacy>
+      </InputTypes>
+    </Item>
+    <Item>
+      <Command>if SirLocksleyPC01 ~= nil and SirLocksleyPC01.Handle ~= nil then SirLocksleyPC01.Handle(SirLocksleyPC01,2) end; if SirLocksleyPC02 ~= nil and SirLocksleyPC02.Handle ~= nil then SirLocksleyPC02.Handle(SirLocksleyPC02,2) end; if SirLocksleyPC03 ~= nil and SirLocksleyPC03.Handle ~= nil then SirLocksleyPC03.Handle(SirLocksleyPC03,2) end; if SirLocksleyPC04 ~= nil and SirLocksleyPC04.Handle ~= nil then SirLocksleyPC04.Handle(SirLocksleyPC04,2) end; if SirLocksleyPC05 ~= nil and SirLocksleyPC05.Handle ~= nil then SirLocksleyPC05.Handle(SirLocksleyPC05,2) end; if SirLocksleyPC06 ~= nil and SirLocksleyPC06.Handle ~= nil then SirLocksleyPC06.Handle(SirLocksleyPC06,2) end; if SirLocksleyPC07 ~= nil and SirLocksleyPC07.Handle ~= nil then SirLocksleyPC07.Handle(SirLocksleyPC07,2) end; if SirLocksleyPC08 ~= nil and SirLocksleyPC08.Handle ~= nil then SirLocksleyPC08.Handle(SirLocksleyPC08,2) end; if SirLocksleyPC09 ~= nil and SirLocksleyPC09.Handle ~= nil then SirLocksleyPC09.Handle(SirLocksleyPC09,2) end; if SirLocksleyPC10 ~= nil and SirLocksleyPC10.Handle ~= nil then SirLocksleyPC10.Handle(SirLocksleyPC10,2) end; if SirLocksleyPC11 ~= nil and SirLocksleyPC11.Handle ~= nil then SirLocksleyPC11.Handle(SirLocksleyPC11,2) end; if SirLocksleyPC12 ~= nil and SirLocksleyPC12.Handle ~= nil then SirLocksleyPC12.Handle(SirLocksleyPC12,2) end</Command>
+      <Text>2088800002</Text>
+      <Active>Session</Active>
+      <Configurable>1</Configurable>
+      <Identifier>SirLocksleyParchmentSelect2</Identifier>
+      <AvailableOnPlatforms>PC</AvailableOnPlatforms>
+      <HideInOptionMenu>0</HideInOptionMenu>
+      <AllowMultipleShortcuts>1</AllowMultipleShortcuts>
+      <InputTypes>
+        <Modern><KeyType>Control;Alt;Digit2</KeyType></Modern>
+        <Legacy><KeyType>Control;Alt;Digit2</KeyType></Legacy>
+      </InputTypes>
+    </Item>
+    <Item>
+      <Command>if SirLocksleyPC01 ~= nil and SirLocksleyPC01.Handle ~= nil then SirLocksleyPC01.Handle(SirLocksleyPC01,3) end; if SirLocksleyPC02 ~= nil and SirLocksleyPC02.Handle ~= nil then SirLocksleyPC02.Handle(SirLocksleyPC02,3) end; if SirLocksleyPC03 ~= nil and SirLocksleyPC03.Handle ~= nil then SirLocksleyPC03.Handle(SirLocksleyPC03,3) end; if SirLocksleyPC04 ~= nil and SirLocksleyPC04.Handle ~= nil then SirLocksleyPC04.Handle(SirLocksleyPC04,3) end; if SirLocksleyPC05 ~= nil and SirLocksleyPC05.Handle ~= nil then SirLocksleyPC05.Handle(SirLocksleyPC05,3) end; if SirLocksleyPC06 ~= nil and SirLocksleyPC06.Handle ~= nil then SirLocksleyPC06.Handle(SirLocksleyPC06,3) end; if SirLocksleyPC07 ~= nil and SirLocksleyPC07.Handle ~= nil then SirLocksleyPC07.Handle(SirLocksleyPC07,3) end; if SirLocksleyPC08 ~= nil and SirLocksleyPC08.Handle ~= nil then SirLocksleyPC08.Handle(SirLocksleyPC08,3) end; if SirLocksleyPC09 ~= nil and SirLocksleyPC09.Handle ~= nil then SirLocksleyPC09.Handle(SirLocksleyPC09,3) end; if SirLocksleyPC10 ~= nil and SirLocksleyPC10.Handle ~= nil then SirLocksleyPC10.Handle(SirLocksleyPC10,3) end; if SirLocksleyPC11 ~= nil and SirLocksleyPC11.Handle ~= nil then SirLocksleyPC11.Handle(SirLocksleyPC11,3) end; if SirLocksleyPC12 ~= nil and SirLocksleyPC12.Handle ~= nil then SirLocksleyPC12.Handle(SirLocksleyPC12,3) end</Command>
+      <Text>2088800003</Text>
+      <Active>Session</Active>
+      <Configurable>1</Configurable>
+      <Identifier>SirLocksleyParchmentSelect3</Identifier>
+      <AvailableOnPlatforms>PC</AvailableOnPlatforms>
+      <HideInOptionMenu>0</HideInOptionMenu>
+      <AllowMultipleShortcuts>1</AllowMultipleShortcuts>
+      <InputTypes>
+        <Modern><KeyType>Control;Alt;Digit3</KeyType></Modern>
+        <Legacy><KeyType>Control;Alt;Digit3</KeyType></Legacy>
+      </InputTypes>
+    </Item>
+    <Item>
+      <Command>if SirLocksleyPC01 ~= nil and SirLocksleyPC01.Handle ~= nil then SirLocksleyPC01.Handle(SirLocksleyPC01,4) end; if SirLocksleyPC02 ~= nil and SirLocksleyPC02.Handle ~= nil then SirLocksleyPC02.Handle(SirLocksleyPC02,4) end; if SirLocksleyPC03 ~= nil and SirLocksleyPC03.Handle ~= nil then SirLocksleyPC03.Handle(SirLocksleyPC03,4) end; if SirLocksleyPC04 ~= nil and SirLocksleyPC04.Handle ~= nil then SirLocksleyPC04.Handle(SirLocksleyPC04,4) end; if SirLocksleyPC05 ~= nil and SirLocksleyPC05.Handle ~= nil then SirLocksleyPC05.Handle(SirLocksleyPC05,4) end; if SirLocksleyPC06 ~= nil and SirLocksleyPC06.Handle ~= nil then SirLocksleyPC06.Handle(SirLocksleyPC06,4) end; if SirLocksleyPC07 ~= nil and SirLocksleyPC07.Handle ~= nil then SirLocksleyPC07.Handle(SirLocksleyPC07,4) end; if SirLocksleyPC08 ~= nil and SirLocksleyPC08.Handle ~= nil then SirLocksleyPC08.Handle(SirLocksleyPC08,4) end; if SirLocksleyPC09 ~= nil and SirLocksleyPC09.Handle ~= nil then SirLocksleyPC09.Handle(SirLocksleyPC09,4) end; if SirLocksleyPC10 ~= nil and SirLocksleyPC10.Handle ~= nil then SirLocksleyPC10.Handle(SirLocksleyPC10,4) end; if SirLocksleyPC11 ~= nil and SirLocksleyPC11.Handle ~= nil then SirLocksleyPC11.Handle(SirLocksleyPC11,4) end; if SirLocksleyPC12 ~= nil and SirLocksleyPC12.Handle ~= nil then SirLocksleyPC12.Handle(SirLocksleyPC12,4) end</Command>
+      <Text>2088800004</Text>
+      <Active>Session</Active>
+      <Configurable>1</Configurable>
+      <Identifier>SirLocksleyParchmentSelect4</Identifier>
+      <AvailableOnPlatforms>PC</AvailableOnPlatforms>
+      <HideInOptionMenu>0</HideInOptionMenu>
+      <AllowMultipleShortcuts>1</AllowMultipleShortcuts>
+      <InputTypes>
+        <Modern><KeyType>Control;Alt;Digit4</KeyType></Modern>
+        <Legacy><KeyType>Control;Alt;Digit4</KeyType></Legacy>
+      </InputTypes>
+    </Item>
+    <Item>
+      <Command>if SirLocksleyPC01 ~= nil and SirLocksleyPC01.Handle ~= nil then SirLocksleyPC01.Handle(SirLocksleyPC01,5) end; if SirLocksleyPC02 ~= nil and SirLocksleyPC02.Handle ~= nil then SirLocksleyPC02.Handle(SirLocksleyPC02,5) end; if SirLocksleyPC03 ~= nil and SirLocksleyPC03.Handle ~= nil then SirLocksleyPC03.Handle(SirLocksleyPC03,5) end; if SirLocksleyPC04 ~= nil and SirLocksleyPC04.Handle ~= nil then SirLocksleyPC04.Handle(SirLocksleyPC04,5) end; if SirLocksleyPC05 ~= nil and SirLocksleyPC05.Handle ~= nil then SirLocksleyPC05.Handle(SirLocksleyPC05,5) end; if SirLocksleyPC06 ~= nil and SirLocksleyPC06.Handle ~= nil then SirLocksleyPC06.Handle(SirLocksleyPC06,5) end; if SirLocksleyPC07 ~= nil and SirLocksleyPC07.Handle ~= nil then SirLocksleyPC07.Handle(SirLocksleyPC07,5) end; if SirLocksleyPC08 ~= nil and SirLocksleyPC08.Handle ~= nil then SirLocksleyPC08.Handle(SirLocksleyPC08,5) end; if SirLocksleyPC09 ~= nil and SirLocksleyPC09.Handle ~= nil then SirLocksleyPC09.Handle(SirLocksleyPC09,5) end; if SirLocksleyPC10 ~= nil and SirLocksleyPC10.Handle ~= nil then SirLocksleyPC10.Handle(SirLocksleyPC10,5) end; if SirLocksleyPC11 ~= nil and SirLocksleyPC11.Handle ~= nil then SirLocksleyPC11.Handle(SirLocksleyPC11,5) end; if SirLocksleyPC12 ~= nil and SirLocksleyPC12.Handle ~= nil then SirLocksleyPC12.Handle(SirLocksleyPC12,5) end</Command>
+      <Text>2088800005</Text>
+      <Active>Session</Active>
+      <Configurable>1</Configurable>
+      <Identifier>SirLocksleyParchmentSelect5</Identifier>
+      <AvailableOnPlatforms>PC</AvailableOnPlatforms>
+      <HideInOptionMenu>0</HideInOptionMenu>
+      <AllowMultipleShortcuts>1</AllowMultipleShortcuts>
+      <InputTypes>
+        <Modern><KeyType>Control;Alt;Digit5</KeyType></Modern>
+        <Legacy><KeyType>Control;Alt;Digit5</KeyType></Legacy>
+      </InputTypes>
+    </Item>
+    <Item>
+      <Command>if SirLocksleyPC01 ~= nil and SirLocksleyPC01.Handle ~= nil then SirLocksleyPC01.Handle(SirLocksleyPC01,6) end; if SirLocksleyPC02 ~= nil and SirLocksleyPC02.Handle ~= nil then SirLocksleyPC02.Handle(SirLocksleyPC02,6) end; if SirLocksleyPC03 ~= nil and SirLocksleyPC03.Handle ~= nil then SirLocksleyPC03.Handle(SirLocksleyPC03,6) end; if SirLocksleyPC04 ~= nil and SirLocksleyPC04.Handle ~= nil then SirLocksleyPC04.Handle(SirLocksleyPC04,6) end; if SirLocksleyPC05 ~= nil and SirLocksleyPC05.Handle ~= nil then SirLocksleyPC05.Handle(SirLocksleyPC05,6) end; if SirLocksleyPC06 ~= nil and SirLocksleyPC06.Handle ~= nil then SirLocksleyPC06.Handle(SirLocksleyPC06,6) end; if SirLocksleyPC07 ~= nil and SirLocksleyPC07.Handle ~= nil then SirLocksleyPC07.Handle(SirLocksleyPC07,6) end; if SirLocksleyPC08 ~= nil and SirLocksleyPC08.Handle ~= nil then SirLocksleyPC08.Handle(SirLocksleyPC08,6) end; if SirLocksleyPC09 ~= nil and SirLocksleyPC09.Handle ~= nil then SirLocksleyPC09.Handle(SirLocksleyPC09,6) end; if SirLocksleyPC10 ~= nil and SirLocksleyPC10.Handle ~= nil then SirLocksleyPC10.Handle(SirLocksleyPC10,6) end; if SirLocksleyPC11 ~= nil and SirLocksleyPC11.Handle ~= nil then SirLocksleyPC11.Handle(SirLocksleyPC11,6) end; if SirLocksleyPC12 ~= nil and SirLocksleyPC12.Handle ~= nil then SirLocksleyPC12.Handle(SirLocksleyPC12,6) end</Command>
+      <Text>2088800006</Text>
+      <Active>Session</Active>
+      <Configurable>1</Configurable>
+      <Identifier>SirLocksleyParchmentSelect6</Identifier>
+      <AvailableOnPlatforms>PC</AvailableOnPlatforms>
+      <HideInOptionMenu>0</HideInOptionMenu>
+      <AllowMultipleShortcuts>1</AllowMultipleShortcuts>
+      <InputTypes>
+        <Modern><KeyType>Control;Alt;Digit6</KeyType></Modern>
+        <Legacy><KeyType>Control;Alt;Digit6</KeyType></Legacy>
+      </InputTypes>
+    </Item>
+    <Item>
+      <Command>if SirLocksleyPC01 ~= nil and SirLocksleyPC01.Handle ~= nil then SirLocksleyPC01.Handle(SirLocksleyPC01,7) end; if SirLocksleyPC02 ~= nil and SirLocksleyPC02.Handle ~= nil then SirLocksleyPC02.Handle(SirLocksleyPC02,7) end; if SirLocksleyPC03 ~= nil and SirLocksleyPC03.Handle ~= nil then SirLocksleyPC03.Handle(SirLocksleyPC03,7) end; if SirLocksleyPC04 ~= nil and SirLocksleyPC04.Handle ~= nil then SirLocksleyPC04.Handle(SirLocksleyPC04,7) end; if SirLocksleyPC05 ~= nil and SirLocksleyPC05.Handle ~= nil then SirLocksleyPC05.Handle(SirLocksleyPC05,7) end; if SirLocksleyPC06 ~= nil and SirLocksleyPC06.Handle ~= nil then SirLocksleyPC06.Handle(SirLocksleyPC06,7) end; if SirLocksleyPC07 ~= nil and SirLocksleyPC07.Handle ~= nil then SirLocksleyPC07.Handle(SirLocksleyPC07,7) end; if SirLocksleyPC08 ~= nil and SirLocksleyPC08.Handle ~= nil then SirLocksleyPC08.Handle(SirLocksleyPC08,7) end; if SirLocksleyPC09 ~= nil and SirLocksleyPC09.Handle ~= nil then SirLocksleyPC09.Handle(SirLocksleyPC09,7) end; if SirLocksleyPC10 ~= nil and SirLocksleyPC10.Handle ~= nil then SirLocksleyPC10.Handle(SirLocksleyPC10,7) end; if SirLocksleyPC11 ~= nil and SirLocksleyPC11.Handle ~= nil then SirLocksleyPC11.Handle(SirLocksleyPC11,7) end; if SirLocksleyPC12 ~= nil and SirLocksleyPC12.Handle ~= nil then SirLocksleyPC12.Handle(SirLocksleyPC12,7) end</Command>
+      <Text>2088800007</Text>
+      <Active>Session</Active>
+      <Configurable>1</Configurable>
+      <Identifier>SirLocksleyParchmentSelect7</Identifier>
+      <AvailableOnPlatforms>PC</AvailableOnPlatforms>
+      <HideInOptionMenu>0</HideInOptionMenu>
+      <AllowMultipleShortcuts>1</AllowMultipleShortcuts>
+      <InputTypes>
+        <Modern><KeyType>Control;Alt;Digit7</KeyType></Modern>
+        <Legacy><KeyType>Control;Alt;Digit7</KeyType></Legacy>
+      </InputTypes>
+    </Item>
+    <Item>
+      <Command>if SirLocksleyPC01 ~= nil and SirLocksleyPC01.Handle ~= nil then SirLocksleyPC01.Handle(SirLocksleyPC01,8) end; if SirLocksleyPC02 ~= nil and SirLocksleyPC02.Handle ~= nil then SirLocksleyPC02.Handle(SirLocksleyPC02,8) end; if SirLocksleyPC03 ~= nil and SirLocksleyPC03.Handle ~= nil then SirLocksleyPC03.Handle(SirLocksleyPC03,8) end; if SirLocksleyPC04 ~= nil and SirLocksleyPC04.Handle ~= nil then SirLocksleyPC04.Handle(SirLocksleyPC04,8) end; if SirLocksleyPC05 ~= nil and SirLocksleyPC05.Handle ~= nil then SirLocksleyPC05.Handle(SirLocksleyPC05,8) end; if SirLocksleyPC06 ~= nil and SirLocksleyPC06.Handle ~= nil then SirLocksleyPC06.Handle(SirLocksleyPC06,8) end; if SirLocksleyPC07 ~= nil and SirLocksleyPC07.Handle ~= nil then SirLocksleyPC07.Handle(SirLocksleyPC07,8) end; if SirLocksleyPC08 ~= nil and SirLocksleyPC08.Handle ~= nil then SirLocksleyPC08.Handle(SirLocksleyPC08,8) end; if SirLocksleyPC09 ~= nil and SirLocksleyPC09.Handle ~= nil then SirLocksleyPC09.Handle(SirLocksleyPC09,8) end; if SirLocksleyPC10 ~= nil and SirLocksleyPC10.Handle ~= nil then SirLocksleyPC10.Handle(SirLocksleyPC10,8) end; if SirLocksleyPC11 ~= nil and SirLocksleyPC11.Handle ~= nil then SirLocksleyPC11.Handle(SirLocksleyPC11,8) end; if SirLocksleyPC12 ~= nil and SirLocksleyPC12.Handle ~= nil then SirLocksleyPC12.Handle(SirLocksleyPC12,8) end</Command>
+      <Text>2088800008</Text>
+      <Active>Session</Active>
+      <Configurable>1</Configurable>
+      <Identifier>SirLocksleyParchmentSelect8</Identifier>
+      <AvailableOnPlatforms>PC</AvailableOnPlatforms>
+      <HideInOptionMenu>0</HideInOptionMenu>
+      <AllowMultipleShortcuts>1</AllowMultipleShortcuts>
+      <InputTypes>
+        <Modern><KeyType>Control;Alt;Digit8</KeyType></Modern>
+        <Legacy><KeyType>Control;Alt;Digit8</KeyType></Legacy>
+      </InputTypes>
+    </Item>
+    <Item>
+      <Command>if SirLocksleyPC01 ~= nil and SirLocksleyPC01.Handle ~= nil then SirLocksleyPC01.Handle(SirLocksleyPC01,9) end; if SirLocksleyPC02 ~= nil and SirLocksleyPC02.Handle ~= nil then SirLocksleyPC02.Handle(SirLocksleyPC02,9) end; if SirLocksleyPC03 ~= nil and SirLocksleyPC03.Handle ~= nil then SirLocksleyPC03.Handle(SirLocksleyPC03,9) end; if SirLocksleyPC04 ~= nil and SirLocksleyPC04.Handle ~= nil then SirLocksleyPC04.Handle(SirLocksleyPC04,9) end; if SirLocksleyPC05 ~= nil and SirLocksleyPC05.Handle ~= nil then SirLocksleyPC05.Handle(SirLocksleyPC05,9) end; if SirLocksleyPC06 ~= nil and SirLocksleyPC06.Handle ~= nil then SirLocksleyPC06.Handle(SirLocksleyPC06,9) end; if SirLocksleyPC07 ~= nil and SirLocksleyPC07.Handle ~= nil then SirLocksleyPC07.Handle(SirLocksleyPC07,9) end; if SirLocksleyPC08 ~= nil and SirLocksleyPC08.Handle ~= nil then SirLocksleyPC08.Handle(SirLocksleyPC08,9) end; if SirLocksleyPC09 ~= nil and SirLocksleyPC09.Handle ~= nil then SirLocksleyPC09.Handle(SirLocksleyPC09,9) end; if SirLocksleyPC10 ~= nil and SirLocksleyPC10.Handle ~= nil then SirLocksleyPC10.Handle(SirLocksleyPC10,9) end; if SirLocksleyPC11 ~= nil and SirLocksleyPC11.Handle ~= nil then SirLocksleyPC11.Handle(SirLocksleyPC11,9) end; if SirLocksleyPC12 ~= nil and SirLocksleyPC12.Handle ~= nil then SirLocksleyPC12.Handle(SirLocksleyPC12,9) end</Command>
+      <Text>2088800009</Text>
+      <Active>Session</Active>
+      <Configurable>1</Configurable>
+      <Identifier>SirLocksleyParchmentSelect9</Identifier>
+      <AvailableOnPlatforms>PC</AvailableOnPlatforms>
+      <HideInOptionMenu>0</HideInOptionMenu>
+      <AllowMultipleShortcuts>1</AllowMultipleShortcuts>
+      <InputTypes>
+        <Modern><KeyType>Control;Alt;Digit9</KeyType></Modern>
+        <Legacy><KeyType>Control;Alt;Digit9</KeyType></Legacy>
+      </InputTypes>
+    </Item>
+    <Item>
+      <Command>if SirLocksleyPC01 ~= nil and SirLocksleyPC01.Handle ~= nil then SirLocksleyPC01.Handle(SirLocksleyPC01,0) end; if SirLocksleyPC02 ~= nil and SirLocksleyPC02.Handle ~= nil then SirLocksleyPC02.Handle(SirLocksleyPC02,0) end; if SirLocksleyPC03 ~= nil and SirLocksleyPC03.Handle ~= nil then SirLocksleyPC03.Handle(SirLocksleyPC03,0) end; if SirLocksleyPC04 ~= nil and SirLocksleyPC04.Handle ~= nil then SirLocksleyPC04.Handle(SirLocksleyPC04,0) end; if SirLocksleyPC05 ~= nil and SirLocksleyPC05.Handle ~= nil then SirLocksleyPC05.Handle(SirLocksleyPC05,0) end; if SirLocksleyPC06 ~= nil and SirLocksleyPC06.Handle ~= nil then SirLocksleyPC06.Handle(SirLocksleyPC06,0) end; if SirLocksleyPC07 ~= nil and SirLocksleyPC07.Handle ~= nil then SirLocksleyPC07.Handle(SirLocksleyPC07,0) end; if SirLocksleyPC08 ~= nil and SirLocksleyPC08.Handle ~= nil then SirLocksleyPC08.Handle(SirLocksleyPC08,0) end; if SirLocksleyPC09 ~= nil and SirLocksleyPC09.Handle ~= nil then SirLocksleyPC09.Handle(SirLocksleyPC09,0) end; if SirLocksleyPC10 ~= nil and SirLocksleyPC10.Handle ~= nil then SirLocksleyPC10.Handle(SirLocksleyPC10,0) end; if SirLocksleyPC11 ~= nil and SirLocksleyPC11.Handle ~= nil then SirLocksleyPC11.Handle(SirLocksleyPC11,0) end; if SirLocksleyPC12 ~= nil and SirLocksleyPC12.Handle ~= nil then SirLocksleyPC12.Handle(SirLocksleyPC12,0) end</Command>
+      <Text>2088800010</Text>
+      <Active>Session</Active>
+      <Configurable>1</Configurable>
+      <Identifier>SirLocksleyParchmentBack</Identifier>
+      <AvailableOnPlatforms>PC</AvailableOnPlatforms>
+      <HideInOptionMenu>0</HideInOptionMenu>
+      <AllowMultipleShortcuts>1</AllowMultipleShortcuts>
+      <InputTypes>
+        <Modern><KeyType>Control;Alt;Digit0</KeyType></Modern>
+        <Legacy><KeyType>Control;Alt;Digit0</KeyType></Legacy>
+      </InputTypes>
+    </Item>
+  </ModOp>
+</ModOps>

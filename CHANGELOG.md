@@ -1,5 +1,24 @@
 # Rename Manager Changelog
 
+## v1.0.1
+
+### Configurable controls
+- Added **Rename Manager - Open** to Anno's **Settings -> Controls**
+- Default Open shortcut remains **Ctrl+Alt+R**
+- Open can be remapped through the native Controls menu
+- Migrated numbered parchment navigation to the shared **Parchment Controls**
+- **Entry 1-9** default to **Ctrl+Alt+1-9**
+- **Back** defaults to **Ctrl+Alt+0**
+- Entry 1-9 and Back can be remapped through the native Controls menu
+- Removed Rename Manager's old private fixed Entry 1-9 / Back shortcut registrations
+
+### Integration and compatibility
+- Rename Manager uses reserved shared parchment consumer **SirLocksleyPC02**
+- Fixed the Rename Manager consumer integration so it receives the actual Rename Manager module object explicitly
+- Existing rename, search, route, island, goods, caching, and navigation logic is unchanged
+- Bundles the shared parchment controls core; no other mod is required
+
+
 ## v1.0.0 — 2026-08-22
 
 ### First public release
