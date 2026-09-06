@@ -82,3 +82,43 @@ jobs:
           path: build/Rename_Manager_v1.0.1-test1_Configurable_Open.zip
           if-no-files-found: error
           retention-days: 14
+
+  recover-shared-core:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out protected Ship Finder controls branch
+        uses: actions/checkout@v4
+        with:
+          repository: SirLocksley13/ShipFinder
+          ref: chatgpt-shipfinder-controls-baseline-v1.5.1
+          path: shipfinder-source
+
+      - name: Extract protected controls package and locate shared core
+        shell: bash
+        run: |
+          set -euo pipefail
+          ZIP='shipfinder-source/test-builds/ShipFinder_v1.5.1_Controls_Baseline.zip'
+          test -f "$ZIP"
+          mkdir extracted
+          unzip -q "$ZIP" -d extracted
+          echo '--- packaged file list containing Parchment/Core ---'
+          find extracted -type f | grep -Ei 'parchment|core' || true
+          echo '--- nested modinfo identities ---'
+          find extracted -name modinfo.json -print -exec cat {} \;
+          CORE_DIR=$(find extracted -type f -name modinfo.json -print0 | xargs -0 grep -l 'sirlocksley-parchment-controls-core' | head -n1 | xargs dirname)
+          if [ -z "$CORE_DIR" ]; then
+            echo 'ERROR: exact production shared core was not found in protected package.'
+            exit 1
+          fi
+          echo "CORE_DIR=$CORE_DIR"
+          mkdir recovered-core
+          cp -a "$CORE_DIR" recovered-core/
+          find recovered-core -type f -print -exec sha256sum {} \;
+
+      - name: Upload recovered exact core
+        uses: actions/upload-artifact@v4
+        with:
+          name: SirLocksley_Parchment_Controls_Core_from_ShipFinder_v1.5.1
+          path: recovered-core
+          if-no-files-found: error
+          retention-days: 14
