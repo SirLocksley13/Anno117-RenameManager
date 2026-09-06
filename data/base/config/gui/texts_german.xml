@@ -130,5 +130,9 @@
       <Text>Waren neu scannen</Text>
       <LineId>2019720020</LineId>
     </Text>
+    <Text>
+      <Text>Rename Manager - Oeffnen</Text>
+      <LineId>2019720021</LineId>
+    </Text>
   </ModOp>
 </ModOps>

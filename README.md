@@ -1,10 +1,10 @@
-# Rename Manager v1.0.0
+# Rename Manager v1.0.1-test1
 
 Rename Manager helps you **find and rename ships and trade routes directly in Anno 117: Pax Romana** without searching through the game manually.
 
 ## Open Rename Manager
 
-Press **Ctrl+Alt+R**.
+Open **Settings -> Controls** and look for **Rename Manager - Open**. The default is **Ctrl+Alt+R**, and you can remap it to another key combination.
 
 Numbered entries in supported parchments use:
 

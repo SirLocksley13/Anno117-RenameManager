@@ -130,5 +130,9 @@
       <Text>Rescan Goods</Text>
       <LineId>2019720020</LineId>
     </Text>
+    <Text>
+      <Text>Rename Manager - Open</Text>
+      <LineId>2019720021</LineId>
+    </Text>
   </ModOp>
 </ModOps>
