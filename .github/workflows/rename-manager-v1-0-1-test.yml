@@ -1,0 +1,84 @@
+name: Rename Manager v1.0.1 Test Candidate
+
+on:
+  push:
+    branches:
+      - chatgpt-v1.0.1-configurable-controls
+  pull_request:
+    branches:
+      - main
+
+permissions:
+  contents: read
+
+jobs:
+  build-and-verify:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out candidate branch
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: RED - protected v1.0.0 must fail new-control validator
+        shell: bash
+        run: |
+          set -euo pipefail
+          if python tools/validate_configurable_open.py --root .; then
+            echo 'ERROR: protected v1.0.0 unexpectedly satisfies the v1.0.1 configurable-open contract.'
+            exit 1
+          fi
+          echo 'RED confirmed: baseline lacks the new configurable opener as expected.'
+
+      - name: Build bounded v1.0.1-test1 candidate
+        run: python tools/build_v1_0_1_test1.py
+
+      - name: GREEN - validate transformed candidate
+        run: python tools/validate_configurable_open.py --root 'build/Rename Manager'
+
+      - name: Parse every XML file and modinfo
+        shell: bash
+        run: |
+          python - <<'PY'
+          import json
+          import xml.etree.ElementTree as ET
+          from pathlib import Path
+
+          root = Path('build/Rename Manager')
+          xml_files = sorted(root.rglob('*.xml'))
+          assert xml_files, 'No XML files found'
+          for path in xml_files:
+              ET.parse(path)
+          json.loads((root / 'modinfo.json').read_text(encoding='utf-8'))
+          print(f'Parsed {len(xml_files)} XML files and modinfo.json successfully.')
+          PY
+
+      - name: Verify package structure and ZIP integrity
+        shell: bash
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import zipfile
+
+          zpath = Path('build/Rename_Manager_v1.0.1-test1_Configurable_Open.zip')
+          with zipfile.ZipFile(zpath) as z:
+              bad = z.testzip()
+              assert bad is None, f'ZIP CRC failure: {bad}'
+              names = z.namelist()
+              modinfos = [n for n in names if n.endswith('/modinfo.json')]
+              assert modinfos == ['Rename Manager/modinfo.json'], modinfos
+              assert all(n.startswith('Rename Manager/') for n in names), 'Unexpected top-level path'
+              print(f'ZIP integrity PASS; {len(names)} files; one modinfo.json.')
+          PY
+          sha256sum build/Rename_Manager_v1.0.1-test1_Configurable_Open.zip
+
+      - name: Upload test candidate
+        uses: actions/upload-artifact@v4
+        with:
+          name: Rename_Manager_v1.0.1-test1_Configurable_Open
+          path: build/Rename_Manager_v1.0.1-test1_Configurable_Open.zip
+          if-no-files-found: error
+          retention-days: 14
