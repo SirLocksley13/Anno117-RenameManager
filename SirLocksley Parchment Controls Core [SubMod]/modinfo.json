@@ -1,0 +1,24 @@
+{
+  "ModID": "sirlocksley-parchment-controls-core",
+  "Version": "1.0.1",
+  "Anno": 8,
+  "Difficulty": "cheat",
+  "RequiresNewGame": false,
+  "SafeToRemove": true,
+  "ModName": {
+    "English": "SirLocksley Parchment Controls Core",
+    "German": "SirLocksley Parchment Controls Core",
+    "French": "SirLocksley Parchment Controls Core"
+  },
+  "Category": {
+    "English": "Mod",
+    "German": "Mod",
+    "French": "Mod"
+  },
+  "Description": {
+    "English": "Shared configurable Entry 1-9 and Back controls for SirLocksley parchment utilities.",
+    "German": "Gemeinsame konfigurierbare Eintrag-1-9- und Zurueck-Steuerung fuer SirLocksley-Parchment-Utilities.",
+    "French": "Commandes partagees et configurables Entrees 1-9 et Retour pour les utilitaires SirLocksley."
+  },
+  "CreatorName": "Dr. Enrico Handrick"
+}

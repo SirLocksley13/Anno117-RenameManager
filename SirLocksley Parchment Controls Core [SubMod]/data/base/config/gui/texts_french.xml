@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='utf-8'?>
+<ModOps>
+  <ModOp Add="/TextExport/Texts[1]">
+    <Text>
+      <Text>Parchment Controls - Entry 1</Text>
+      <LineId>2088800001</LineId>
+    </Text>
+    <Text>
+      <Text>Parchment Controls - Entry 2</Text>
+      <LineId>2088800002</LineId>
+    </Text>
+    <Text>
+      <Text>Parchment Controls - Entry 3</Text>
+      <LineId>2088800003</LineId>
+    </Text>
+    <Text>
+      <Text>Parchment Controls - Entry 4</Text>
+      <LineId>2088800004</LineId>
+    </Text>
+    <Text>
+      <Text>Parchment Controls - Entry 5</Text>
+      <LineId>2088800005</LineId>
+    </Text>
+    <Text>
+      <Text>Parchment Controls - Entry 6</Text>
+      <LineId>2088800006</LineId>
+    </Text>
+    <Text>
+      <Text>Parchment Controls - Entry 7</Text>
+      <LineId>2088800007</LineId>
+    </Text>
+    <Text>
+      <Text>Parchment Controls - Entry 8</Text>
+      <LineId>2088800008</LineId>
+    </Text>
+    <Text>
+      <Text>Parchment Controls - Entry 9</Text>
+      <LineId>2088800009</LineId>
+    </Text>
+    <Text>
+      <Text>Parchment Controls - Back</Text>
+      <LineId>2088800010</LineId>
+    </Text>
+  </ModOp>
+</ModOps>
